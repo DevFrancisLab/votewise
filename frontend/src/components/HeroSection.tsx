@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useAuth } from "@/context/AuthContext";
-import heroImage from "@/assets/hero-voting.jpeg";
+const heroImage = "/hero-image.png";
 
 const HeroSection = () => {
   const { isAuthenticated } = useAuth();
