@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 
 const Navbar = () => {
@@ -30,7 +31,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button asChild>
-            <a href="#hero">Get Started</a>
+            <Link to="/login">Get Started</Link>
           </Button>
         </div>
 
@@ -57,7 +58,7 @@ const Navbar = () => {
             </a>
           ))}
           <Button className="w-full mt-2" asChild>
-            <a href="#hero">Get Started</a>
+            <Link to="/login">Get Started</Link>
           </Button>
         </div>
       )}

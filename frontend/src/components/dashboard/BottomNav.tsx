@@ -1,5 +1,6 @@
 import { Brain, Scale, Shield, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useAuth } from "@/context/AuthContext";
 import { toast } from "sonner";
 
 interface BottomNavProps {
@@ -9,11 +10,13 @@ interface BottomNavProps {
 
 const BottomNav = ({ activeView, setActiveView }: BottomNavProps) => {
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   const handleLogout = () => {
-    // TODO: Clear authentication state if exists
-    toast.success("You have been logged out");
-    navigate("/");
+    logout().then(() => {
+      toast.success("You have been logged out");
+      navigate("/");
+    });
   };
 
   const navItems = [
