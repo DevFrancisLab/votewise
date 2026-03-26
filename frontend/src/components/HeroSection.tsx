@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import heroImage from "@/assets/hero-voting.jpeg";
 
 const HeroSection = () => {
@@ -18,8 +19,8 @@ const HeroSection = () => {
               peacefully—all in one platform.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" className="text-base font-semibold px-8">
-                Get Started
+              <Button size="lg" className="text-base font-semibold px-8" asChild>
+                <Link to="/dashboard?view=candidates">Get Started</Link>
               </Button>
             </div>
           </div>

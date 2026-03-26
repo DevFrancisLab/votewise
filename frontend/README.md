@@ -1,3 +1,3 @@
-# Welcome to your Lovable project
+# VoteWise Frontend
 
 TODO: Document your project here

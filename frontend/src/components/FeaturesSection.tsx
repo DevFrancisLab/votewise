@@ -15,15 +15,15 @@ const features = [
   },
   {
     icon: Heart,
-    title: "Peace Mode",
+    title: "Civic Watch",
     description:
       "Report activities anonymously and see aggregated trends with AI insights.",
   },
   {
     icon: Bell,
-    title: "Youth Pulse",
+    title: "Citizen Pulse",
     description:
-      "Participate in occasional polls to show what matters most to youth.",
+      "Participate in occasional polls to show what matters most to citizens.",
   },
 ];
 
