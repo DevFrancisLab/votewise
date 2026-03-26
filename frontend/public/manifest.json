@@ -1,6 +1,6 @@
 {
-  "name": "VoteWise",
-  "short_name": "VoteWise",
+  "name": "VoteWise AI",
+  "short_name": "VoteWise AI",
   "description": "Your AI Civic Assistant for Smarter Voting",
   "start_url": "/",
   "display": "standalone",

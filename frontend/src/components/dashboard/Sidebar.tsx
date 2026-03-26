@@ -28,7 +28,7 @@ const Sidebar = ({ activeView, setActiveView }: SidebarProps) => {
   return (
     <div className="w-64 bg-black text-white min-h-screen">
       <div className="p-6">
-        <h2 className="text-xl font-bold mb-8">VoteWise</h2>
+        <h2 className="text-xl font-bold mb-8">VoteWise AI</h2>
         <nav className="space-y-4">
           {navItems.map((item) => {
             const Icon = item.icon;

@@ -16,7 +16,7 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-secondary">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <a href="#" className="text-secondary-foreground font-extrabold text-xl tracking-tight">
-          VoteWise
+          VoteWise AI
         </a>
 
         {/* Desktop links */}

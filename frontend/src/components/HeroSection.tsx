@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
+import { useAuth } from "@/context/AuthContext";
 import heroImage from "@/assets/hero-voting.jpeg";
 
 const HeroSection = () => {
+  const { isAuthenticated } = useAuth();
+  const callToActionLink = isAuthenticated ? "/dashboard?view=candidates" : "/login";
   return (
     <section id="hero" className="pt-24 pb-16 md:pt-32 md:pb-24">
       <div className="container mx-auto px-4">
@@ -20,7 +23,7 @@ const HeroSection = () => {
             </p>
             <div className="flex flex-wrap gap-4">
               <Button size="lg" className="text-base font-semibold px-8" asChild>
-                <Link to="/dashboard?view=candidates">Get Started</Link>
+                <Link to={callToActionLink}>Get Started</Link>
               </Button>
             </div>
           </div>
